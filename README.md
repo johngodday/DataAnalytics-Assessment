@@ -34,6 +34,10 @@ Calculate the average number of transactions per customer **per month** and cate
 - **Medium Frequency** (3–9 transactions/month)
 - **Low Frequency** (≤2 transactions/month)
 
+**Tables Used:**
+- `users_customuser`
+- `savings_savingsaccount`
+
 
 ---
 
