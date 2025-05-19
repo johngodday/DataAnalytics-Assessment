@@ -52,3 +52,24 @@ Find all active accounts (savings or investments) with **no transactions in the 
 **Tables Used:**
 - `plans_plan`
 - `savings_savingsaccount`
+
+
+### 4. Customer Lifetime Value (CLV) Estimation
+
+**Scenario:**  
+Marketing wants to estimate CLV based on account tenure and transaction volume (simplified model).
+
+**Task:**  
+For each customer, assuming the `profit_per_transaction` is **0.1% of the transaction value**, calculate:
+- **Account tenure** (months since signup)
+- **Total transactions**
+- **Estimated CLV**
+
+> Formula:  
+> `CLV = (total_transactions / tenure_months) * 12 * avg_profit_per_transaction`
+
+Order the result by **estimated CLV from highest to lowest**.
+
+**Tables Used:**
+- `users_customuser`
+- `savings_savingsaccount`
